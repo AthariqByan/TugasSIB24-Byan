@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/form.css" />
+    </head>
+    <body>
+        <div class="container">
+            <form action="index.html">
+                <label for="name">Nama:</label><br />
+                <input type="text" id="fname" placeholder="Masukan Nama" /><br />
+                <label for="email">Email:</label><br />
+                <input type="text" id="Email" placeholder="Masukan Email" /><br /><br />
+                <label for="No. Hp">No HP:</label><br />
+                <input type="text" id="Nohp" placeholder="Masukan No Hp Aktif" /><br /><br />
+                <form action="index.html"></form>
+                <label for="jenis_kelamin">Jenis Kelamin:</label><br />
+                <input type="radio" id="jeniskelamin" name="jenis_kelamin" value="Laki laki" />Laki laki <br />
+                <input type="radio" id="jeniskelamin2" name="jenis_kelamin2" value="Peremnpuan" />Peremupuan <br />
+               </form>
+                <br />
+                <label for="prodi">Prodi</label>
+                <br />
+                <select id="prodi" name="prodi">
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                    <option value="Teknologi informasi">Teknologi informasi</option>
+                    <option value="Software Enginering">Software Enginering</option>
+                </select>
+                <br />
+                <br />
+                <form action="index.html">
+                    <label for="hobi">Hobi</label><br />
+                    <input type="checkbox" id="hobi" value="Membaca" />Membaca <br />
+                    <input type="checkbox" nid="hobi2" value="Menulis" />Menulis<br />
+                    <input type="checkbox" nid="hobi3" value="Menyanyi" />Menyanyi<br />
+                    <input type="checkbox" nid="hobi4" value="Olahraga" />Olahraga<br />
+                </form>
+                <br />
+                <label for="Alamat">Alamat</label><br />
+                <input type="text" id="Alamat" placeholder="Alamat" /><br /><br />
+
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <label for="file">Choose a file:</label><br />
+                    <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .gif" />
+                    <br /><br />
+                    <input type="submit" value="Upload" /> <input type="submit" value="Submit" />
+                </form>
+            </form>
+        </div>
+    </body>
+</html>
