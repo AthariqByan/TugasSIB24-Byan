@@ -12,8 +12,11 @@
                 <img src="./assets/download.jpeg" alt="" />
             </div>
 
-            <div class="text"></div>
+            <div class="text">
+                <a href="./landingdom.html"> PERGI KE LANDING DOM</a>
+            </div>
         </nav>
+
         <div class="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item">
@@ -29,37 +32,6 @@
             <button class="carousel-btn carousel-next">&#10095;</button>
         </div>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const carouselItems = document.querySelectorAll(".carousel-item");
-                const totalItems = carouselItems.length;
-                let currentIndex = 0;
-
-                function showItem(index) {
-                    carouselItems.forEach((item, i) => {
-                        if (i === index) {
-                            item.style.display = "block";
-                        } else {
-                            item.style.display = "none";
-                        }
-                    });
-                }
-
-                function nextItem() {
-                    currentIndex = (currentIndex + 1) % totalItems;
-                    showItem(currentIndex);
-                }
-
-                function prevItem() {
-                    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-                    showItem(currentIndex);
-                }
-
-                document.querySelector(".carousel-btn.carousel-next").addEventListener("click", nextItem);
-                document.querySelector(".carousel-btn.carousel-prev").addEventListener("click", prevItem);
-
-                showItem(currentIndex);
-            });
-        </script>
+        <script></script>
     </body>
 </html>
